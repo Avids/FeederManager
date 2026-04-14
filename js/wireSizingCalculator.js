@@ -11,11 +11,11 @@
  *  
  * This calculator also handles voltage drop calculations and compliance verification.
  */
-
-function wireSizingCalculator(currentLoad, length, voltage) {
     // Constants based on OESC rules
     const RESISTANCE_PER_KM = 0.026; // example resistance in ohms/km
     const MAX_VOLTAGE_DROP_PERCENTAGE = 0.03; // 3% voltage drop
+function wireSizingCalculator(currentLoad, length, voltage) {
+
 
     // Step 1: Calculate Required Conductor Size based on rules
     let conductorSize = calculateConductorSize(currentLoad);

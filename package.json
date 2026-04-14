@@ -1,1 +1,11 @@
-{\n  \"name\": \"feeder-manager\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A simple feeder manager project\",\n  \"main\": \"index.js\",\n  \"scripts\": { \n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\" \n  },\n  \"author\": \"Avids\",\n  \"license\": \"ISC\"\n}
+{
+  "name": "feeder-manager",
+  "version": "1.0.0",
+  "description": "A simple feeder manager project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avids",
+  "license": "ISC"
+}

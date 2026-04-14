@@ -1,0 +1,12 @@
+// js/storage.js
+
+const saveData = (key, data) => {
+    localStorage.setItem(key, JSON.stringify(data));
+};
+
+const loadData = (key) => {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
+};
+
+export { saveData, loadData };

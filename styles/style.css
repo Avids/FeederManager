@@ -1,70 +1,77 @@
 /* FeederManager Application Styles */
 
+:root {
+    color-scheme: light;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    padding: 24px;
+    background-color: #eef2f7;
+    color: #0f172a;
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 24px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+h2 {
+    margin-top: 0;
 }
 
-header h1 {
-    margin: 0;
-}
-
-nav {
-    margin: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
+#toolbox,
+#canvas-container {
     background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+    padding: 16px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
+#components-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.component-button {
     width: 100%;
-}
-
-.button {
-    background-color: #35424a;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-size: 14px;
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: #5c6bc0;
+.component-button:hover {
+    background-color: #e2e8f0;
+}
+
+.component-button.secondary {
+    margin-top: 8px;
+    background-color: #fff7ed;
+    border-color: #fdba74;
+}
+
+#canvas {
+    width: 100%;
+    min-height: 560px;
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.error {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+    }
 }
